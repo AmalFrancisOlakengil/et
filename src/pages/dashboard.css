@@ -1,0 +1,55 @@
+.dashboard{
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    justify-items: center;
+    height: auto;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+    background-color: antiquewhite;
+    border-radius: 5px;
+
+}
+
+.dashboard-block{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    border-radius: 20px;
+    padding: 30px;
+   width: 90%;
+}
+.title-dashboard{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.monthname{
+    margin-left: 10px;
+    color: brown;
+}
+
+.graph{
+   padding: 0px;
+   margin: 0px;
+}
+
+@media (max-width: 450px) {
+    .title-sent{
+        margin-bottom: 0px;
+    }
+    .monthname{
+        margin-top: 0px;
+        margin-left: 10px;
+        color: brown;
+    }
+}
