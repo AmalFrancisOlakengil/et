@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import "./home.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Home = () => {
     const [income, setIncome] = useState('');
     const [dailyLimit, setDailyLimit] = useState('');
     const [savingTarget, setSavingTarget] = useState('');
     const [reminder, setReminder] = useState(false);
     const [expense, setexpense] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -21,6 +22,7 @@ const Home = () => {
     const handleAdd = (e)=>{
         e.preventDefault();
         console.log({expense});
+        navigate('/pages/dashboard', { state: { data: expense } });
     };
 
     return (
@@ -31,7 +33,7 @@ const Home = () => {
                         <Link to='/'>Home</Link>
                     </li>
                     <li>
-                        <Link to='/pages/dashboard'>Dashboard</Link>
+                        <Link to={{ pathname: '/pages/dashboard', state:{data: expense}}}>Dashboard</Link>
                     </li>
                     <li>
                         <Link to='/pages/notification'>Notifications</Link>
@@ -95,6 +97,23 @@ const Home = () => {
                 <button type='submit' className='submit-button'>Add Expense</button>
             </div>
             </form>
+            <div className='olddata'>
+                <h1>Select a month to view</h1>
+            <select id="months" name="months">
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+                </select>
+            </div>
         </div>
     );
 };

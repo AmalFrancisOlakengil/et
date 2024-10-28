@@ -5,7 +5,7 @@ import { Bar } from 'react-chartjs-2';
 // Register necessary components with Chart.js
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const ExpenseGraph = (props) => {
+const ExpenseGraph2 = (props) => {
     // Load saved values from localStorage or initialize with zero values
     const initialValues = JSON.parse(localStorage.getItem('weeklyExpenses')) || new Array(7).fill(0);
     console.log(initialValues);
@@ -51,7 +51,7 @@ const ExpenseGraph = (props) => {
         labels: labels,
         datasets: [
             {
-                label: 'Daily Expenses',
+                label: 'Future Expenses',
                 data: value,
                 backgroundColor: 'rgba(75, 192, 192, 0.6)',
                 borderColor: 'rgba(75, 192, 192, 1)',
@@ -71,12 +71,12 @@ const ExpenseGraph = (props) => {
 
     return (
         <div style={{ width: '80%', height: '80%', margin: 'auto' }}>
-            <h2>Weekly Expense Overview</h2>
+            <h2>Future Spending Trends</h2>
             <Bar data={data} options={options} />
         </div>
     );
 };
 
-export default ExpenseGraph;
+export default ExpenseGraph2;
 
 

@@ -103,3 +103,16 @@ form {
     align-items: center;
     cursor: pointer;
 }
+
+.olddata{
+    background-color: beige;
+    padding: 30px;
+    border-radius: 20px;
+    justify-items: center;
+}
+
+.olddata select{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+}
