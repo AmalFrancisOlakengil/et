@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Dashboard from "./Pages/Dashboard/dashboard.js";
+import Dashboard from "./Pages/Dashboard/Dashboard.js";
 import Addexpense from "./Pages/AddExpense/addexpense.js";
 import Aiinsights from "./Pages/AIInsights/aiinsights.js";
 import Expenselist from "./Pages/ExpenseList/expenselist.js";

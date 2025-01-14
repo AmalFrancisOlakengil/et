@@ -1,0 +1,55 @@
+.Dashboard{
+  font-family: Arial, Helvetica, sans-serif;
+   margin: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.Title{
+  color:rgb(111, 181, 181);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Title2{
+  color:rgb(111, 181, 181);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10%;
+}
+.month{
+  background-color: beige;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px
+}
+.monthnum{
+  background-color: rgb(245, 203, 151);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2%;
+}
+.xcat, .xtre{
+  text-align: center;
+  background-color: rgb(245, 203, 151);
+  border-radius: 10px;
+  height : 400px;
+  width: 600px;
+  margin: 10px;
+}
+.monthvis{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2%;
+}
+.numcont{
+  margin: 2%;
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 10px;
+}
+

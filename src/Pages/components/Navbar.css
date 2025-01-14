@@ -1,0 +1,28 @@
+.Navbar{
+    margin: 5%;
+    position: top;
+}
+.NavbarList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-around;
+    background-color: beige;
+    border-radius: 20px;
+}
+.NavbarList li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.NavbarList li:hover{
+    background-color: rgb(223, 223, 183);
+}
+.NavbarList li a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; 
+    color: inherit; 
+}

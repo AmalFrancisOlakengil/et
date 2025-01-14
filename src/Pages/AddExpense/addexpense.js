@@ -1,10 +1,14 @@
+import Navbar from "../components/Navbar.js";
+
+import Footer from "../components/Footer.js";
 
 import "./addexpense.css";
 
 function Addexpense(){
     return(<>
-    
-    <h1>DAdd Expense</h1>
+    <Navbar/>
+    <h1>Add Expense</h1>
+    <Footer/>
     </>)
     
     }
