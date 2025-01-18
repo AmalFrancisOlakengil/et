@@ -9,8 +9,8 @@ function Navbar(){
         <li><Link to="/"> 📊Dashboard</Link></li>
         <li><Link to="/AddExpense">🏦Add Expense</Link></li>
         <li><Link to="/ExpenseList">📝Expense List</Link></li>
-        <li><Link to="/AiInsights" >🤖AI Insights</Link></li>
-        <li><Link to="/Settings">⚙️Settings</Link></li>
+        <li><Link to="/Insights" >💡Insights</Link></li>
+        <li><Link to="/about">ℹ️ About</Link></li>
       </ul>
      </nav>
     </>);

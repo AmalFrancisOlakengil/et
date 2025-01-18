@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Dashboard from "./Pages/Dashboard/Dashboard.js";
 import Addexpense from "./Pages/AddExpense/addexpense.js";
-import Aiinsights from "./Pages/AIInsights/aiinsights.js";
+import Aiinsights from './Pages/Insights/insights.js';
 import Expenselist from "./Pages/ExpenseList/expenselist.js";
 import Settings from "./Pages/Settings/settings.js";
 function App(){
@@ -15,9 +15,9 @@ function App(){
                 {/* Define routes */}
                 <Route path="/" element={<Dashboard />} /> {/* Default page */}
                 <Route path="/AddExpense" element={<Addexpense />} />
-                <Route path="/AiInsights" element={<Aiinsights />} />
+                <Route path="/Insights" element={<Aiinsights />} />
                 <Route path="/ExpenseList" element={<Expenselist />} />
-                <Route path="/Settings" element={<Settings />} />
+                <Route path="/about" element={<Settings />} />
             </Routes>
   </Router>
 

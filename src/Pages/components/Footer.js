@@ -12,9 +12,9 @@ function Footer(){
         <div className="contacts">
             <h4>francisamal030@gmail.com</h4>
             <div>
-            <a href="https://www.example.com">📱</a>
-            <a  href="https://www.example.com">👔</a>
-            <a  href="https://www.example.com">🖥️</a>
+            <a target="_blank" rel="noreferrer"  href="https://linktr.ee/AmalFrancisOlakengil">📱</a>
+            <a target="_blank" rel="noreferrer"  href="https://www.linkedin.com/in/amalfrancisolakengil/">👔</a>
+            <a target="_blank" rel="noreferrer"  href="https://github.com/AmalFrancisOlakengil">🖥️</a>
             </div>
         </div>
     </div>
