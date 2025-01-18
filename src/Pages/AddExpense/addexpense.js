@@ -17,12 +17,27 @@ const openDb = () => {
         store.createIndex("date", "date", { unique: false });
         store.createIndex("day", "day", { unique: false });
         store.createIndex("category", "category", { unique: false });
+        console.log("Object store 'expenses' created.");
       }
     };
 
-    request.onerror = (e) =>
+    request.onerror = (e) => {
       reject(`Error opening database: ${e.target.error}`);
-    request.onsuccess = (e) => resolve(e.target.result);
+    };
+
+    request.onsuccess = (e) => {
+      const db = e.target.result;
+
+      // Check if the required object store exists
+      if (!db.objectStoreNames.contains("expenses")) {
+        console.error("Object store 'expenses' is missing. Resetting database.");
+        db.close();
+        indexedDB.deleteDatabase("expensesDatabase");
+        window.location.reload(); // Reload the app to initialize the database
+      } else {
+        resolve(db);
+      }
+    };
   });
 };
 
